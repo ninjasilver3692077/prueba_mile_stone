@@ -6,22 +6,37 @@
     <meta name="description" content="PlayReal team roles for the milestone one prototype.">
     <title>PlayReal - Team</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: "class" };
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    </script>
 </head>
-<body class="bg-slate-50 text-slate-900">
-    <header class="border-b border-blue-800 bg-blue-700 text-white"><div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8"><a href="index.html" class="text-xl font-bold">PlayReal</a><nav aria-label="Prototype navigation" class="flex flex-wrap gap-3 text-sm font-medium"><a href="index.html" class="hover:text-blue-100">Home</a><a href="group.html" class="hover:text-blue-100">Group</a><a href="upload-evidence.html" class="hover:text-blue-100">Evidence</a><a href="voting.html" class="hover:text-blue-100">Voting</a><a href="ranking.html" class="hover:text-blue-100">Ranking</a><a href="about.html" aria-current="page" class="underline">Team</a></nav></div></header>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+    <header class="border-b border-blue-800 bg-blue-700 text-white dark:border-slate-700 dark:bg-slate-900">
+        <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="text-xl font-bold">PlayReal</a>
+            <nav aria-label="Prototype navigation" class="flex flex-wrap gap-3 text-sm font-medium">
+                <a href="index.html" class="hover:text-blue-100">Home</a><a href="group.html" class="hover:text-blue-100">Group</a><a href="upload-evidence.html" class="hover:text-blue-100">Evidence</a><a href="voting.html" class="hover:text-blue-100">Voting</a><a href="ranking.html" class="hover:text-blue-100">Ranking</a><a href="about.html" aria-current="page" class="underline">Team</a>
+            </nav>
+            <button id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" class="rounded-md border border-blue-300 bg-blue-600 px-3 py-2 text-sm font-semibold text-white hover:bg-blue-500 dark:border-slate-600 dark:bg-slate-800 dark:hover:bg-slate-700"><span id="theme-label">Dark mode</span></button>
+        </div>
+    </header>
     <main>
         <section class="px-4 py-12 sm:px-6 lg:px-8"><div class="mx-auto max-w-6xl">
-            <p class="text-sm font-semibold uppercase tracking-wider text-blue-700">DSAW Team</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-300">DSAW Team</p>
             <h1 class="mt-2 text-4xl font-bold">The people behind PlayReal</h1>
-            <p class="mt-4 max-w-3xl text-slate-600">Each member has a clear responsibility in the research, design, implementation, and testing of the project.</p>
+            <p class="mt-4 max-w-3xl text-slate-600 dark:text-slate-300">Each member has a clear responsibility in the research, design, implementation, and testing of the project.</p>
             <div class="mt-8 grid gap-5 sm:grid-cols-2">
-                <article class="rounded-xl border border-blue-200 bg-white p-6"><h2 class="text-xl font-semibold text-blue-700">Juan Esteban Gonzalez Villarreal</h2><p class="mt-2 font-medium">Project lead and documentation</p><p class="mt-3 text-slate-600">Defines the problem, user stories, milestone documentation, and delivery coordination.</p></article>
-                <article class="rounded-xl border border-blue-200 bg-white p-6"><h2 class="text-xl font-semibold text-blue-700">Edwin Andres Montano Castaneda</h2><p class="mt-2 font-medium">Frontend and UX/UI design</p><p class="mt-3 text-slate-600">Develops visual direction, responsive interface decisions, and the Figma wireframes.</p></article>
-                <article class="rounded-xl border border-blue-200 bg-white p-6"><h2 class="text-xl font-semibold text-blue-700">Jorge Daniel Fontalvo Restrepo</h2><p class="mt-2 font-medium">Backend, deployment, and database</p><p class="mt-3 text-slate-600">Plans server-side logic, data structure, deployment, and technical continuity for later phases.</p></article>
-                <article class="rounded-xl border border-blue-200 bg-white p-6"><h2 class="text-xl font-semibold text-blue-700">Daniel Orozco Castano</h2><p class="mt-2 font-medium">Feedback and testing</p><p class="mt-3 text-slate-600">Coordinates usability feedback, quality checks, and testing evidence for the prototype.</p></article>
+                <article class="rounded-xl border border-blue-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900"><h2 class="text-xl font-semibold text-blue-700 dark:text-blue-300">Juan Esteban Gonzalez Villarreal</h2><p class="mt-2 font-medium">Project lead and documentation</p><p class="mt-3 text-slate-600 dark:text-slate-300">Defines the problem, user stories, milestone documentation, and delivery coordination.</p></article>
+                <article class="rounded-xl border border-blue-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900"><h2 class="text-xl font-semibold text-blue-700 dark:text-blue-300">Edwin Andres Montano Castaneda</h2><p class="mt-2 font-medium">Frontend and UX/UI design</p><p class="mt-3 text-slate-600 dark:text-slate-300">Develops visual direction, responsive interface decisions, and the Figma wireframes.</p></article>
+                <article class="rounded-xl border border-blue-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900"><h2 class="text-xl font-semibold text-blue-700 dark:text-blue-300">Jorge Daniel Fontalvo Restrepo</h2><p class="mt-2 font-medium">Backend, deployment, and database</p><p class="mt-3 text-slate-600 dark:text-slate-300">Plans server-side logic, data structure, deployment, and technical continuity for later phases.</p></article>
+                <article class="rounded-xl border border-blue-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900"><h2 class="text-xl font-semibold text-blue-700 dark:text-blue-300">Daniel Orozco Castano</h2><p class="mt-2 font-medium">Feedback and testing</p><p class="mt-3 text-slate-600 dark:text-slate-300">Coordinates usability feedback, quality checks, and testing evidence for the prototype.</p></article>
             </div>
         </div></section>
     </main>
-    <footer class="bg-blue-800 px-4 py-6 text-center text-sm text-blue-100"><p><a href="index.html" class="underline hover:text-white">Return to the PlayReal landing page</a></p></footer>
+    <footer class="bg-blue-800 px-4 py-6 text-center text-sm text-blue-100 dark:bg-slate-950"><p><a href="index.html" class="underline hover:text-white">Return to the PlayReal landing page</a></p></footer>
+    <script src="js/theme.js"></script>
 </body>
 </html>
